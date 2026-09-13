@@ -1,24 +1,14 @@
 import telebot
 import os
-from flask import Flask
 
-# التوكن الحقيقي الخاص ببوتك تم وضعه هنا بنجاح
+# التوكن الحقيقي الخاص ببوتك تم وضعه بنجاح
 TOKEN = "8669917083:AAE3Zmnv-fIKo0QbIeXxGaloc_8H3_0Bctg"
-
 bot = telebot.TeleBot(TOKEN)
-server = Flask(__name__)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message, "أهلاً بك في بوت الأرقام الوهمية! الخدمة تحت التطوير حالياً.")
 
-@server.route('/')
-def webhook():
-    return "Bot is running!", 200
-
 if __name__ == "__main__":
-    import threading
-    threading.Thread(target=bot.infinity_polling, daemon=True).start()
-    
-    port = int(os.environ.get("PORT", 5000))
-    server.run(host="0.0.0.0", port=port)
+    print("البوت يعمل الآن بنجاح...")
+    bot.infinity_polling()
