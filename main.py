@@ -3,7 +3,7 @@ import os
 from flask import Flask
 
 # ⚠️ ضع توكن البوت الحقيقي الخاص بك من BotFather هنا بين علامات التنصيص
-TOKEN = "123456789:ABCdefGhIJKlmNoPQR
+TOKEN = "BotFather
 
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
