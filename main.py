@@ -11,7 +11,8 @@ TELEGRAM_TOKEN = '8932968608:AAHHXeegMilCmDEc8ndzkF3e-V3BX4i4N1k'
 RINGBETA_API_TOKEN = '8f32d791099f39e86bb44785132f7a73'
 
 # الرابط الأساسي الرسمي المحدث لخوادم الإنتاج لمنع الحظر
-BASE_URL = "https://"apiringbeta.com"
+BASE_URL = "https://ringbeta.com"
+
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
