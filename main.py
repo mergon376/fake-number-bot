@@ -13,6 +13,7 @@ RINGBETA_API_TOKEN = '8f32d791099f39e86bb44785132f7a73'
 # الرابط الأساسي الرسمي المستخرج من خوادم الإنتاج لمنع الحظر
 BASE_URL = "https://ringbeta.com"
 
+
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 # إعداد سيرفر ويب وهمي لمنع توقف منصة Render المجانية
