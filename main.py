@@ -10,9 +10,8 @@ TELEGRAM_TOKEN = '8932968608:AAHHXeegMilCmDEc8ndzkF3e-V3BX4i4N1k'
 # 2. رمز الـ API الثابت الخاص بك من موقع Ringbeta
 RINGBETA_API_TOKEN = '8f32d791099f39e86bb44785132f7a73'
 
-# الرابط الأساسي الرسمي المستخرج من خوادم الإنتاج لمنع الحظر
+# الرابط الأساسي الرسمي المحدث لخوادم الإنتاج لمنع الحظر
 BASE_URL = "https://ringbeta.com"
-
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
@@ -145,7 +144,6 @@ def rent_us_number(message):
         bot.edit_message_text(f"❌ حدث خطأ تقني غير متوقع: {str(e)}", message.chat.id, status_msg.message_id)
 
 if __name__ == '__main__':
-    # تشغيل سيرفر ويب لضمان استقرار البوت على المنصات السحابية المجانية مثل Render
     t = Thread(target=run_web_server)
     t.start()
     
