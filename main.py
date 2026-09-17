@@ -10,7 +10,7 @@ TELEGRAM_TOKEN = '8932968608:AAHHXeegMilCmDEc8ndzkF3e-V3BX4i4N1k'
 # 2. رمز الـ API الثابت الخاص بك من موقع Ringbeta
 RINGBETA_API_TOKEN = '8f32d791099f39e86bb44785132f7a73'
 
-# الرابط الأساسي الرسمي المستخرج من خوادم الإنتاج
+# الرابط الأساسي الرسمي المستخرج من خوادم الإنتاج لمنع الحظر
 BASE_URL = "https://ringbeta.com"
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
@@ -150,4 +150,4 @@ if __name__ == '__main__':
     
     print("البوت يعمل بكامل صلاحياته البرمجية المحدثة الآن...")
     bot.infinity_polling()
-        
+    
